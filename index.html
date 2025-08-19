@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Card Using JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ===== Start: Tailwind CDN ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- ===== End: Tailwind CDN ===== -->
+  </head>
+  <body
+    class="bg-slate-600 flex flex-col items-center justify-center gap-7 h-[100vh]"
+  >
+    <!-- Profile card Input -->
+    <div class="w-[250px]">
+      <h1 class="text-slate-400 text-2xl font-bold mb-3 tracking-wide">
+        Profile Card Input
+      </h1>
+      <form action="">
+        <input
+          class="outline-0 border border-slate-400 mb-3 py-1 px-3 font-semibold w-full text-[18px] rounded-lg text-slate-200"
+          type="text"
+          placeholder="Profile Pic"
+        /><br />
+        <input
+          class="outline-0 border border-slate-400 mb-3 py-1 px-3 font-semibold w-full text-[18px] rounded-lg text-slate-200"
+          type="text"
+          placeholder="Name"
+        /><br />
+
+        <input
+          class="outline-0 border border-slate-400 mb-3 py-1 px-3 font-semibold w-full text-[18px] rounded-lg text-slate-200"
+          type="text"
+          placeholder="Occupation"
+        /><br />
+        <input
+          class="outline-0 border border-slate-400 mb-3 py-1 px-3 font-semibold w-full text-[18px] rounded-lg text-slate-200"
+          type="text"
+          placeholder="Works At"
+        />
+        <input
+          id="submit-btn"
+          class="bg-slate-700 text-slate-400 cursor-pointer p-2.5 rounded-lg w-1/2 text-xl font-bold"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+    <div class="flex gap-7 flex-wrap" id="card-container"></div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
